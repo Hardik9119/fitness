@@ -1,0 +1,9 @@
+body{background:#111;color:#eee;font-family:Arial;padding:20px}
+.container{max-width:1100px;margin:auto}
+.tabs{margin-bottom:10px}
+.tab{padding:8px 14px;background:#333;color:#fff;border:none;margin-right:5px;cursor:pointer}
+.tab.active{background:#2a3eb1}
+.tab-content{display:none;border:1px solid #333;padding:15px;margin-bottom:10px}
+.tab-content.active{display:block}
+input,textarea,select{width:100%;margin-bottom:10px;padding:6px;background:#111;color:#eee;border:1px solid #333}
+button{background:#2a3eb1;color:#fff;border:none;padding:10px 16px}

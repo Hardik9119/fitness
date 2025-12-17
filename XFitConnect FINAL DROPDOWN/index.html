@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Earth Month Virtual Cycling Challenge – Admin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Earth Month Virtual Cycling Challenge</h1>
+
+<div class="tabs">
+  <button class="tab active" data-tab="details">DETAILS</button>
+  <button class="tab" data-tab="html">HTML</button>
+  <button class="tab" data-tab="scoring">SCORING</button>
+  <button class="tab" data-tab="goals">GOALS</button>
+</div>
+
+<div class="tab-content active" id="details">
+  <label>Challenge Name</label>
+  <input id="challengeName" value="Earth Month Virtual Cycling Challenge">
+
+  <label>Start Date</label>
+  <input type="date" id="startDate">
+
+  <label>End Date</label>
+  <input type="date" id="endDate">
+
+  <label>Allowed Activity</label>
+  <select id="activityType">
+    <option value="ride">Ride</option>
+    <option value="virtual_ride">Virtual Ride</option>
+  </select>
+
+  <label>Starting Category</label>
+  <select id="startCategory">
+    <option>Amateur</option>
+    <option>Master</option>
+    <option>Elite</option>
+  </select>
+</div>
+
+<div class="tab-content" id="html">
+  <label>Challenge Description</label>
+  <textarea rows="6">
+Complete cycling rides during Earth Month.
+Automatic category upgrades apply.
+Elite-Pro is awarded at 2500 km.
+  </textarea>
+</div>
+
+<div class="tab-content" id="scoring">
+  <label>Minimum Ride Distance</label>
+  <select id="minDistance">
+    <option value="5">5 km</option>
+    <option value="10">10 km</option>
+  </select>
+
+  <label>Elapsed vs Moving Time Ratio</label>
+  <select id="timeRatio">
+    <option value="1.5">1.5x</option>
+    <option value="2">2x</option>
+  </select>
+
+  <label>Speed Validation</label>
+  <select id="speedRange">
+    <option value="5-60">5–60 km/h</option>
+    <option value="5-70">5–70 km/h</option>
+  </select>
+</div>
+
+<div class="tab-content" id="goals">
+  <label>Amateur Goal</label>
+  <select><option>100 km</option></select>
+
+  <label>Master Goal</label>
+  <select><option>400 km</option></select>
+
+  <label>Master Mandatory Rides</label>
+  <select><option>2 × 50 km</option></select>
+
+  <label>Elite Goal</label>
+  <select><option>700 km</option></select>
+
+  <label>Elite Mandatory Rides</label>
+  <select><option>2 × 100 km</option></select>
+
+  <label>Elite-Pro Threshold</label>
+  <select><option>2500 km</option></select>
+</div>
+
+<button onclick="saveChallenge()">Save Challenge</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
